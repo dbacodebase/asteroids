@@ -48,7 +48,7 @@ def main():
             for shot in shots:
                 if item.check_collisions(shot):
                     shot.kill()
-                    item.kill()
+                    item.split()
 
         for item in drawable:
             item.draw(screen)
